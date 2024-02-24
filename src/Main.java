@@ -1,6 +1,8 @@
+import View.View;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("все норм");
-        // test saving
+        View view = new View();
+        view.start();
     }
 }

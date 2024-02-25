@@ -46,7 +46,14 @@ public class Calculator implements Calculable {
 
     @Override
     public void division() {
-        
+        this.result.setReal((complexNumber1.getReal() * complexNumber2.getReal() +
+                            complexNumber1.getImaginary() * complexNumber2.getImaginary()) /
+                            (Math.pow(complexNumber2.getReal(), 2) + 
+                            Math.pow(complexNumber2.getImaginary(), 2)));
+        this.result.setImaginary((complexNumber1.getImaginary() * complexNumber2.getReal() - 
+                                complexNumber1.getReal() * complexNumber2.getImaginary()) /
+                                (Math.pow(complexNumber2.getReal(), 2) + 
+                                Math.pow(complexNumber2.getImaginary(), 2)));
     }
 
     @Override

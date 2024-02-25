@@ -10,3 +10,11 @@ INFO: Addition... (3.0 + 4.0i) + (5.0 + 6.0i) = 8.0 + 10.0i
 февр. 25, 2024 3:49:08 PM Model.impl.CalculatorWithLogger addition
 INFO: Addition... (3.0 - 5.0i) + (1.0) = 4.0 - 5.0i
 
+февр. 25, 2024 5:06:47 PM Model.impl.CalculatorWithLogger division
+INFO: Division... (2.0 + 4.0i) / (3.0 + 7.0i) = 0.5862068965517241 - 0.034482758620689655i
+
+февр. 25, 2024 5:11:48 PM Model.impl.CalculatorWithLogger subtraction
+INFO: Subtraction... (4.0 + 3.0i) - (6.0 - 4.0i) = -2.0 + 7.0i
+
+февр. 25, 2024 5:12:17 PM Model.impl.CalculatorWithLogger addition
+INFO: Addition... (3.0 + 2.0i) + (5.0 + 3.0i) = 8.0 + 5.0i

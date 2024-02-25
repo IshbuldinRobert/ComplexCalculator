@@ -1,0 +1,12 @@
+февр. 25, 2024 3:47:33 PM Model.impl.CalculatorWithLogger subtraction
+INFO: Subtraction... (3.0 + 6.0i) - (-4.0 + 5.2i) = 7.0 + 0.7999999999999998i
+
+февр. 25, 2024 3:48:32 PM Model.impl.CalculatorWithLogger multiplication
+INFO: Multiplication... (4.3 + 8.6i) * (1.9 - 2.5i) = 29.67 + 5.59i
+
+февр. 25, 2024 3:48:53 PM Model.impl.CalculatorWithLogger addition
+INFO: Addition... (3.0 + 4.0i) + (5.0 + 6.0i) = 8.0 + 10.0i
+
+февр. 25, 2024 3:49:08 PM Model.impl.CalculatorWithLogger addition
+INFO: Addition... (3.0 - 5.0i) + (1.0) = 4.0 - 5.0i
+

@@ -26,8 +26,11 @@ public class ComplexNumber {
 
     @Override
     public String toString() {
-        if (imaginary > 0) return String.format("%s + %si", real, imaginary);
-        else if (imaginary < 0) return String.format("%s - %si", real, Math.abs(imaginary));
-        else return String.format("%s", real);
+        if (imaginary < 0 && real != 0) {
+            return String.format("%s - %si", real, Math.abs(imaginary));
+        }
+        else if (imaginary == 0) return String.format("%s", real);
+        else if (real == 0) return String.format("%si", imaginary);
+        else return String.format("%s + %si", real, imaginary);
     }
 }

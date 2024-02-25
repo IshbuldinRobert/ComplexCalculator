@@ -8,22 +8,28 @@ public class Calculator implements Calculable {
     private ComplexNumber complexNumber2;
     private ComplexNumber result;
 
-    public Calculator(ComplexNumber num1, ComplexNumber num2) {
-        this.complexNumber1 = num1;
-        this.complexNumber2 = num2;
+    public Calculator() {
+        this.complexNumber1 = new ComplexNumber(0, 0);
+        this.complexNumber2 = new ComplexNumber(0, 0);
         this.result = new ComplexNumber(0, 0);
     }
 
     public ComplexNumber getComplexNumber1() {
         return complexNumber1;
     }
-
     public ComplexNumber getComplexNumber2() {
         return complexNumber2;
     }
 
+    @Override
+    public void updateComplexNumbers(ComplexNumber num1, ComplexNumber num2) {
+        this.complexNumber1 = num1;
+        this.complexNumber2 = num2;
+    }
+
+    @Override
     public ComplexNumber getResult() {
-        return result;
+        return this.result;
     }
 
     @Override
@@ -40,14 +46,14 @@ public class Calculator implements Calculable {
 
     @Override
     public void division() {
+        
     }
 
     @Override
     public void multiplication() {
-    }
-
-    @Override
-    public void clear() {
-        this.result = new ComplexNumber(0, 0);
+        this.result.setReal((complexNumber1.getReal() * complexNumber2.getReal()) +
+                            + ((-1) * complexNumber1.getImaginary() * complexNumber2.getImaginary()));
+        this.result.setImaginary(complexNumber1.getReal() * complexNumber2.getImaginary() +
+                            + (complexNumber1.getImaginary() * complexNumber2.getReal()));
     }
 }
